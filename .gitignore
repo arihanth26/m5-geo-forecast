@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data (keep raw out of git)
+data/
+**/data/
+**/data_raw/
+**/raw/
+*.csv
+*.parquet
+
+# Node/Next (if you have web/)
+node_modules/
+.next/
+out/
