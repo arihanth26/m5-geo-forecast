@@ -136,9 +136,9 @@ function DeckOverlay({
   onHover: (info: any) => void;
   onClick: (info: any) => void;
 }) {
-  const overlay = useControl<MapboxOverlay>(
+  const overlay = useControl(
     () => new MapboxOverlay({ layers, effects, onHover, onClick })
-  );
+  ) as any;
   overlay.setProps({ layers, effects, onHover, onClick });
   return null;
 }
