@@ -1,35 +1,16 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg-info/
-dist/
-build/
+# -----------------------------
+# Data handling (precise rules)
+# -----------------------------
 
-# Virtual envs
-.venv/
-venv/
-ENV/
-.env
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS/editor
-.DS_Store
-Thumbs.db
-.vscode/
-
-# Data (keep raw out of git)
-data/
-**/data/
-**/data_raw/
-**/raw/
+# Ignore large raw datasets everywhere
 *.csv
 *.parquet
 
-# Node/Next (if you have web/)
-node_modules/
-.next/
-out/
+# Ignore generic raw data folders (except web/data)
+data/
+**/data_raw/
+**/raw/
+
+# Allow app runtime JSON data
+!web/data/
+!web/data/**/*.json
