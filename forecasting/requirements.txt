@@ -1,0 +1,10 @@
+pandas
+numpy
+statsmodels
+scikit-learn
+lightgbm
+torch
+tqdm
+geopandas
+shapely
+pyarrow
